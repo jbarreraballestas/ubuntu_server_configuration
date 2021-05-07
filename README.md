@@ -4,7 +4,7 @@
 #
 
 #
-#Apache
+# Apache
 #
 
 sudo apt install -y apache2 libapache2-mod-php php-bz2 php-curl php-gd php-mysql php-zip php-mbstring php-bcmath php-tokenizer php-sqlite3 unzip php-intl php-xmlrpc php-soap
@@ -15,7 +15,7 @@ sudo apt install -y apache2 libapache2-mod-php php-bz2 php-curl php-gd php-mysql
 #
 
 #
-#User to group
+# User to group
 #
 sudo usermod -a -G www-data $USER
 
