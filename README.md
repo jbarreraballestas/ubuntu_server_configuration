@@ -21,8 +21,7 @@ curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash - && sudo apt in
 
 # Mariadb 10.5 repository
 
-sudo apt install software-properties-common -y
-sudo apt-key adv --fetch-keys 'https://mariadb.org/mariadb_release_signing_key.asc'
+sudo apt install software-properties-common -y && sudo apt-key adv --fetch-keys 'https://mariadb.org/mariadb_release_signing_key.asc'
 # Para ubuntu 20.04
 
 sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] http://sfo1.mirrors.digitalocean.com/mariadb/repo/10.5/ubuntu focal main'
