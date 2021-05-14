@@ -26,15 +26,15 @@ sudo apt install software-properties-common -y && sudo apt-key adv --fetch-keys 
 
 sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] http://sfo1.mirrors.digitalocean.com/mariadb/repo/10.5/ubuntu focal main'
 # Para ubuntu 18.04
-sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] http://sfo1.mirrors.digitalocean.com/mariadb/repo/10.5/ubuntu bionic main'
-sudo apt update && sudo apt install mariadb-server -y
+<p>sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] http://sfo1.mirrors.digitalocean.com/mariadb/repo/10.5/ubuntu bionic main'</p>
+<p>sudo apt update && sudo apt install mariadb-server -y</p>
 
 # Mysql Commands
 
-sudo mysql
-CREATE DATABASE database_name;
-CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';
-GRANT ALL ON database_name.* TO 'user'@'localhost';
+<p>sudo mysql</p>
+<p>CREATE DATABASE database_name;</p>
+<p>CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';</p>
+<p>GRANT ALL ON database_name.* TO 'user'@'localhost';</p>
 
 # Phpmyadmin
 
