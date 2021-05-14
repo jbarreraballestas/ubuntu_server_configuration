@@ -16,8 +16,7 @@ sudo apt install -y default-jdk
 
 # Node 16.x
 
-curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-sudo apt install -y nodejs
+curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash - && sudo apt install -y nodejs
 
 
 # Mariadb 10.5 repository
