@@ -45,13 +45,13 @@ sudo apt install phpmyadmin -y
 <p>wget https://raw.githubusercontent.com/composer/getcomposer.org/76a7060ccb93902cd7576b67264ad91c8a2700e2/web/installer -O - -q | php -- --quiet</p>
 <p>sudo mv composer.phar /usr/bin/composer
 
-# Permisos de carpetas
-
+# Permisos de carpeta apache 
 <p>sudo chown -R $USER /var/www/html/</p>
-<p>sudo chmod -R 775 alejo/storage</p>
-<p>sudo chmod -R 775 alejo/bootstrap/cache</p>
-<p>sudo chown -R www-data alejo/storage</p>
-<p>sudo chown -R www-data alejo/bootstrap/cache</p>
+# Permisos de carpetas laravel 7
+<p>sudo chmod -R 775 proyecto/storage</p>
+<p>sudo chmod -R 775 proyecto/bootstrap/cache</p>
+<p>sudo chown -R www-data proyecto/storage</p>
+<p>sudo chown -R www-data proyecto/bootstrap/cache</p>
 
 # Host Virtuales Apache
 
