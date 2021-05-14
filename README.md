@@ -58,3 +58,7 @@ sudo apt install phpmyadmin -y
 <p>sudo nano /etc/apache2/sites-available/000-default.conf</p>
 <p>sudo systemctl restart apache2</p>
 
+
+# Habilitar modulo rewrite
+<p>sudo a2enmod rewrite</p>
+<p>sudo systemctl restart apache2</p>
