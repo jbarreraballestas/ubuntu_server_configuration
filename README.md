@@ -8,6 +8,10 @@
 # Agregar AllowOverride All a la carpeta www
 <p>sudo nano /etc/apache2/apache2.conf</p>
 
+# Habilitar modulo rewrite
+<p>sudo a2enmod rewrite</p>
+<p>sudo systemctl restart apache2</p>
+
 # User to group
 <p>sudo usermod -a -G www-data $USER</p>
 
@@ -59,6 +63,4 @@ sudo apt install phpmyadmin -y
 <p>sudo systemctl restart apache2</p>
 
 
-# Habilitar modulo rewrite
-<p>sudo a2enmod rewrite</p>
-<p>sudo systemctl restart apache2</p>
+
