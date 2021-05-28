@@ -63,4 +63,5 @@ sudo apt install phpmyadmin -y
 <p>sudo systemctl restart apache2</p>
 
 
-
+# Laravel 7 Permisos de directorio
+<p>sudo chown -R :www-data storage/ && sudo chown -R :www-data bootstrap/cache/ && sudo chmod -R 775 storage/ && sudo chmod -R 775 bootstrap/cache/</p>
