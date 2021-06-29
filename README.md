@@ -60,7 +60,7 @@ sudo apt install phpmyadmin -y
 # Host Virtuales Apache
 
 <p>sudo nano /etc/apache2/sites-available/000-default.conf</p>
-<p>sudo systemctl restart apache2</p>
+<p>sudo systemctl reload apache2</p>
 
 
 # Laravel 7 Permisos de directorio
