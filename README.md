@@ -1,4 +1,4 @@
-# Idioma Español Colombia
+# Idioma Español
 
 <p>sudo apt install language-pack-es</p>
 <p>sudo dpkg-reconfigure locales</p>
