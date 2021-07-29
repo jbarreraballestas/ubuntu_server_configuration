@@ -1,3 +1,8 @@
+# Idioma Español Colombia
+
+<p>sudo apt install language-pack-es</p>
+<p>sudo dpkg-reconfigure locales</p>
+
 # Comandos para configurar e instalar software en ubuntu server
 
 # Apache
