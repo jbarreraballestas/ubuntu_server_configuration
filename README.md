@@ -56,17 +56,11 @@ sudo apt install phpmyadmin -y
 
 # Permisos de carpeta apache 
 <p>sudo chown -R $USER /var/www/html/</p>
-# Permisos de carpetas laravel 7
-<p>sudo chmod -R 775 proyecto/storage</p>
-<p>sudo chmod -R 775 proyecto/bootstrap/cache</p>
-<p>sudo chown -R www-data proyecto/storage</p>
-<p>sudo chown -R www-data proyecto/bootstrap/cache</p>
+
+# Laravel 7 Permisos de directorio
+<p>sudo chown -R :www-data storage/ && sudo chown -R :www-data bootstrap/cache/ && sudo chmod -R 775 storage/ && sudo chmod -R 775 bootstrap/cache/</p>
 
 # Host Virtuales Apache
 
 <p>sudo nano /etc/apache2/sites-available/000-default.conf</p>
 <p>sudo systemctl reload apache2</p>
-
-
-# Laravel 7 Permisos de directorio
-<p>sudo chown -R :www-data storage/ && sudo chown -R :www-data bootstrap/cache/ && sudo chmod -R 775 storage/ && sudo chmod -R 775 bootstrap/cache/</p>
