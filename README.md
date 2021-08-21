@@ -54,11 +54,6 @@ sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] http://sfo1.mirrors.digi
 
 sudo apt install phpmyadmin -y
 
-# Composer
-
-<p>wget https://raw.githubusercontent.com/composer/getcomposer.org/76a7060ccb93902cd7576b67264ad91c8a2700e2/web/installer -O - -q | php -- --quiet</p>
-<p>sudo mv composer.phar /usr/bin/composer
-
 # Permisos de carpeta apache 
 <p>sudo chown -R $USER /var/www/html/</p>
 
