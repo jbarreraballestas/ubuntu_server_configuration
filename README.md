@@ -8,7 +8,7 @@
 # Apache
 <p>sudo add-apt-repository ppa:ondrej/php</p>
 <p>sudo add-apt-repository ppa:ondrej/apache2</p>
-<p>sudo apt install -y apache2 software-properties-common libapache2-mod-fcgid libapache2-mod-php php-bz2 php-curl php-gd php-mysql php-zip php-mbstring php-bcmath php-tokenizer php-sqlite3 unzip php-intl php-xmlrpc php-soap php-xml php7.3-fpm</p>
+<p>sudo apt install -y apache2 software-properties-common libapache2-mod-fcgid libapache2-mod-php php-bz2 php-curl php-gd php-mysql php-zip php-mbstring php-bcmath php-tokenizer php-sqlite3 unzip php-intl php-xmlrpc php-soap php-xml php-fpm</p>
 
 
 # Agregar AllowOverride All a la carpeta www
