@@ -54,6 +54,8 @@ sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] http://sfo1.mirrors.digi
 
 # Phpmyadmin
 
+<p>sudo add-apt-repository ppa:phpmyadmin/ppa (No recomendado)</p>
+
 sudo apt install phpmyadmin -y
 
 # Permisos de carpeta apache 
