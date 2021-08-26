@@ -64,6 +64,8 @@ sudo apt install phpmyadmin -y
 # Laravel Permisos de directorio
 <p>sudo chown -R $USER:www-data storage/ && sudo chown -R $USER:www-data bootstrap/cache/ && sudo chmod -R 775 storage/ && sudo chmod -R 775 bootstrap/cache/</p>
 
+# Laravel Español
+<p>https://github.com/Laraveles/spanish</p>
 # Host Virtuales Apache
 
 <p>sudo nano /etc/apache2/sites-available/000-default.conf</p>
