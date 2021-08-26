@@ -66,6 +66,7 @@ sudo apt install phpmyadmin -y
 
 # Laravel Español
 <p>https://github.com/Laraveles/spanish</p>
+
 # Host Virtuales Apache
 
 <p>sudo nano /etc/apache2/sites-available/000-default.conf</p>
