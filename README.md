@@ -14,6 +14,9 @@
 # Agregar AllowOverride All a la carpeta www
 <p>sudo nano /etc/apache2/apache2.conf</p>
 
+# Probar Configuración Apache
+<p>apachectl configtest</p>
+
 # Habilitar modulo rewrite
 <p>sudo a2enmod rewrite</p>
 <p>sudo systemctl restart apache2</p>
