@@ -45,7 +45,7 @@ sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] http://sfo1.mirrors.digi
 <p>sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] http://sfo1.mirrors.digitalocean.com/mariadb/repo/10.6/ubuntu bionic main'</p>
 <p>sudo apt update && sudo apt install mariadb-server -y</p>
 
-# Mysql Commands
+# Comandos Mysql
 <p>sudo mysql</p>
 <p>CREATE DATABASE database_name;</p>
 <p>CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';</p>
