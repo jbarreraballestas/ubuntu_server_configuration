@@ -10,6 +10,11 @@
 <p>sudo add-apt-repository ppa:ondrej/apache2</p>
 <p>sudo apt install -y apache2 software-properties-common libapache2-mod-fcgid libapache2-mod-php php-bz2 php-curl php-gd php-mysql php-zip php-mbstring php-bcmath php-tokenizer php-sqlite3 unzip php-intl php-xmlrpc php-soap php-xml php-fpm</p>
 
+# Agregar el usuario actual al grupo www-data
+<p>sudo usermod -a -G www-data $USER</p>
+
+# Permisos de carpeta apache 
+<p>sudo chown -R $USER /var/www/html/ (Se recomienda que solo el usuario tenga acceso de edición a los ficheros de configuración)</p>
 
 # Agregar AllowOverride All a la carpeta www
 <p>sudo nano /etc/apache2/apache2.conf</p>
@@ -20,9 +25,6 @@
 # Habilitar modulo rewrite
 <p>sudo a2enmod rewrite</p>
 <p>sudo systemctl restart apache2</p>
-
-# Agregar el usuario actual al grupo www-data
-<p>sudo usermod -a -G www-data $USER</p>
 
 # Jdk - Kit de Desarrollo Java
 <p>sudo apt install -y default-jdk</p>
@@ -52,12 +54,11 @@ sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] http://sfo1.mirrors.digi
 <p>GRANT ALL ON database_name.* TO 'user'@'localhost';</p>
 
 # Phpmyadmin
-<p>sudo add-apt-repository ppa:phpmyadmin/ppa (No recomendado)</p>
+<p>sudo add-apt-repository ppa:phpmyadmin/ppa (No recomendado en producción pero tiene los últimos cambios)</p>
 
 <p>sudo apt install phpmyadmin -y</p>
 
-# Permisos de carpeta apache 
-<p>sudo chown -R $USER /var/www/html/</p>
+
 
 # Laravel Permisos de directorio
 <p>sudo chown -R $USER:www-data storage/ && sudo chown -R $USER:www-data bootstrap/cache/ && sudo chmod -R 775 storage/ && sudo chmod -R 775 bootstrap/cache/</p>
