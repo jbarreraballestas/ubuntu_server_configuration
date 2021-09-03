@@ -62,7 +62,7 @@ sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] http://sfo1.mirrors.digi
 # Laravel Permisos de directorio
 <p>sudo chown -R $USER:www-data storage/ && sudo chown -R $USER:www-data bootstrap/cache/ && sudo chmod -R 775 storage/ && sudo chmod -R 775 bootstrap/cache/</p>
 
-# Laravel Español
+# Laravel Validación Español
 <p>https://github.com/Laraveles/spanish</p>
 
 # Host Virtuales Apache
