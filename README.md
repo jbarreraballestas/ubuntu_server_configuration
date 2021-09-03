@@ -21,12 +21,10 @@
 <p>sudo a2enmod rewrite</p>
 <p>sudo systemctl restart apache2</p>
 
-# User to group
+# Agregar el usuario actual al grupo www-data
 <p>sudo usermod -a -G www-data $USER</p>
 
-
-
-# Jdk
+# Jdk - Kit de Desarrollo Java
 <p>sudo apt install -y default-jdk</p>
 
 # Composer
@@ -34,32 +32,29 @@
 
 
 # Node 16.x
-
 <p>curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash - && sudo apt install -y nodejs</p>
 
 
 # Mariadb 10.x repository
-
 sudo apt install software-properties-common -y && sudo apt-key adv --fetch-keys 'https://mariadb.org/mariadb_release_signing_key.asc'
-# Para ubuntu 20.04
 
+# Para ubuntu 20.04
 sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] http://sfo1.mirrors.digitalocean.com/mariadb/repo/10.6/ubuntu focal main'
+
 # Para ubuntu 18.04
 <p>sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] http://sfo1.mirrors.digitalocean.com/mariadb/repo/10.6/ubuntu bionic main'</p>
 <p>sudo apt update && sudo apt install mariadb-server -y</p>
 
 # Mysql Commands
-
 <p>sudo mysql</p>
 <p>CREATE DATABASE database_name;</p>
 <p>CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';</p>
 <p>GRANT ALL ON database_name.* TO 'user'@'localhost';</p>
 
 # Phpmyadmin
-
 <p>sudo add-apt-repository ppa:phpmyadmin/ppa (No recomendado)</p>
 
-sudo apt install phpmyadmin -y
+<p>sudo apt install phpmyadmin -y</p>
 
 # Permisos de carpeta apache 
 <p>sudo chown -R $USER /var/www/html/</p>
@@ -71,6 +66,5 @@ sudo apt install phpmyadmin -y
 <p>https://github.com/Laraveles/spanish</p>
 
 # Host Virtuales Apache
-
 <p>sudo nano /etc/apache2/sites-available/000-default.conf</p>
 <p>sudo systemctl reload apache2</p>
