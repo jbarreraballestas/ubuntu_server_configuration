@@ -3,6 +3,9 @@
 <p>sudo apt install language-pack-es</p>
 <p>sudo dpkg-reconfigure locales</p>
 
+# Certbot
+<p>sudo snap install core; sudo snap refresh core; sudo snap install --classic certbot; sudo ln -s /snap/bin/certbot /usr/bin/certbot</p>
+
 # Comandos para configurar e instalar software en ubuntu server
 
 # Apache
