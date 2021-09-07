@@ -48,7 +48,7 @@ sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] http://sfo1.mirrors.digi
 
 # Para ubuntu 18.04
 <p>sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] http://sfo1.mirrors.digitalocean.com/mariadb/repo/10.6/ubuntu bionic main'</p>
-<p>sudo apt update && sudo apt install mariadb-server -y</p>
+<p>sudo apt update && sudo apt install mariadb-server -y && sudo mysql_secure_installation</p>
 
 # Comandos Mysql
 <p>sudo mysql</p>
