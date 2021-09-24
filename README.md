@@ -34,7 +34,10 @@
 
 # Composer
 <p>php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && php composer-setup.php && php -r "unlink('composer-setup.php');" && sudo mv composer.phar /usr/local/bin/composer</p>
+<p>export PATH="$HOME/.config/composer/vendor/bin:$PATH"</p>
 
+# Laravel
+<p>composer global require laravel/installer</p>
 
 # Node 16.x
 <p>curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash - && sudo apt install -y nodejs</p>
