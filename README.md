@@ -1,3 +1,6 @@
+# Zona Horaria
+<p>sudo timedatectl set-timezone America/Bogota</p>
+
 # Idioma Español
 
 <p>sudo apt install language-pack-es</p>
