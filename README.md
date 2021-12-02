@@ -28,18 +28,16 @@
 # Agregar AllowOverride All a la carpeta www Configurar apache
 <p>sudo nano /etc/apache2/apache2.conf</p>
 
-<p>Caché para tipos de archivo<p>
+<p># Caché para tipos de archivo<p>
 <p><FilesMatch ".(js|css|jpg|jpeg|png|gif|ico|swf|mp4|webm|svg)$"></p>
 <p>                Header set Cache-Control "max-age=31536000, public"</p>
 <p>                Header unset Last-Modified</p>
 <p>                Header unset ETag</p>
 <p></FilesMatch></p>
 
-<p>Sobreescribir rutas url (pretty urls)</p>
+<p># Sobreescribir rutas url (pretty urls)</p>
 <p><Directory /var/www/></p>
-<p>        ...</p>
 <p>        AllowOverride All
-<p>        ...</p>
 <p></Directory></p>
 
 
