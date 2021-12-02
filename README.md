@@ -30,11 +30,11 @@
 
 <p># Caché para tipos de archivo<p>
 
-> <FilesMatch ".(js|css|jpg|jpeg|png|gif|ico|swf|mp4|webm|svg)$">
->                Header set Cache-Control "max-age=31536000, public"
->                Header unset Last-Modified
->                Header unset ETag
-> </FilesMatch>
+<FilesMatch ".(js|css|jpg|jpeg|png|gif|ico|swf|mp4|webm|svg)$">
+                Header set Cache-Control "max-age=31536000, public"
+                Header unset Last-Modified
+                Header unset ETag
+</FilesMatch>
   
 <p># Sobreescribir rutas url (pretty urls)</p>
 <p><Directory /var/www/></p>
