@@ -25,7 +25,7 @@
 # Permisos de carpeta apache 
 <p>sudo chown -R $USER /var/www/html/ (Se recomienda que solo el usuario tenga acceso de edición a los ficheros de configuración)</p>
 
-# Agregar AllowOverride All a la carpeta www Configurar apache
+# Configurar apache
 <p>sudo nano /etc/apache2/apache2.conf</p>
 
 <p># Caché para tipos de archivo<p>
