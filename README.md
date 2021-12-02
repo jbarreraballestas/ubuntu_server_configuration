@@ -29,7 +29,7 @@
 <p>sudo nano /etc/apache2/apache2.conf</p>
 
 <p># Caché para tipos de archivo<p>
-  ```
+```
 <FilesMatch ".(js|css|jpg|jpeg|png|gif|ico|swf|mp4|webm|svg)$">
                 Header set Cache-Control "max-age=31536000, public"
                 Header unset Last-Modified
