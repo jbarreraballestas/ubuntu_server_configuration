@@ -82,9 +82,9 @@ sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] http://sfo1.mirrors.digi
 
 # Phpmyadmin
 <p>sudo add-apt-repository ppa:phpmyadmin/ppa (No recomendado en producción pero tiene los últimos cambios)</p>
-
 <p>sudo apt install phpmyadmin -y</p>
 
+<p>https://foratdot.info/como-instalar-mariadb-server-y-phpmyadmin/</p>
 
 
 # Laravel Permisos de directorio
