@@ -20,6 +20,11 @@
 # Habilitar PHP-FPM
 <p>sudo a2enmod proxy_fcgi setenvif && sudo a2enconf php-fpm</p>
 
+# Cambiar version de php cli
+<p>sudo update-alternatives --config php</p>
+
+# 
+
 # Agregar el usuario actual al grupo www-data
 <p>sudo usermod -a -G www-data $USER</p>
 
