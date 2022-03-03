@@ -3,9 +3,7 @@
 sudo timedatectl set-timezone America/Bogota
 ```
 
-
 # Idioma Español
-
 ```
 sudo apt install language-pack-es
 ```
@@ -38,24 +36,31 @@ sudo phpenmod mbstring
 ```
 
 # Habilitar PHP-FPM
-> sudo a2enmod proxy_fcgi setenvif && sudo a2enconf php-fpm
+```
+sudo a2enmod proxy_fcgi setenvif && sudo a2enconf php-fpm
+```
 
 # Cambiar version de php cli
-> sudo update-alternatives --config php
-
-# 
+```
+sudo update-alternatives --config php
+```
 
 # Agregar el usuario actual al grupo www-data
-> sudo usermod -a -G www-data $USER
+```
+sudo usermod -a -G www-data $USER
+```
 
 # Permisos de carpeta apache 
-> sudo chown -R $USER /var/www/html/ (Se recomienda que solo el usuario tenga acceso de edición a los ficheros de configuración)
+```
+sudo chown -R $USER /var/www/html/ (Se recomienda que solo el usuario tenga acceso de edición a los ficheros de configuración)
+```
 
 # Configurar apache
-> sudo nano /etc/apache2/apache2.conf
+```
+sudo nano /etc/apache2/apache2.conf
+```
 
 **Caché para tipos de archivo**
-
 ```
 <FilesMatch ".(js|css|jpg|jpeg|png|gif|ico|swf|mp4|webm|svg)$">
     Header set Cache-Control "max-age=31536000, public"
@@ -63,24 +68,38 @@ sudo phpenmod mbstring
     Header unset ETag
 </FilesMatch>
 ```
-<p># Sobreescribir rutas url (pretty urls)</p>
-<p><Directory /var/www/></p>
-<p>        AllowOverride All
-<p></Directory></p>
+
+# Sobreescribir rutas url (pretty urls)
+```
+<Directory /var/www/>
+        AllowOverride All
+</Directory>
+```
 
 
 # Probar Configuración Apache
-<p>apachectl configtest</p>
+```
+apachectl configtest
+```
 
 # Habilitar modulo rewrite
-<p>sudo a2enmod rewrite</p>
-<p>sudo systemctl restart apache2</p>
+```
+sudo a2enmod rewrite
+```
+```
+sudo systemctl restart apache2
+```
+
 
 # Jdk - Kit de Desarrollo Java
-<p>sudo apt install -y default-jdk</p>
+```
+sudo apt install -y default-jdk
+```
 
 # Composer
-<p>php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && php composer-setup.php && php -r "unlink('composer-setup.php');" && sudo mv composer.phar /usr/local/bin/composer</p>
+``
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && php composer-setup.php && php -r "unlink('composer-setup.php');" && sudo mv composer.phar /usr/local/bin/composer
+``
 <p>export PATH="$HOME/.config/composer/vendor/bin:$PATH"</p>
 
 # Laravel
