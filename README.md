@@ -1,5 +1,8 @@
 # Zona Horaria
+```
 > sudo timedatectl set-timezone America/Bogota
+```
+
 
 # Idioma Español
 
