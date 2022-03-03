@@ -55,6 +55,10 @@ sudo usermod -a -G www-data $USER
 sudo chown -R $USER /var/www/html/ (Se recomienda que solo el usuario tenga acceso de edición a los ficheros de configuración)
 ```
 
+# Habilitar el modulo header apache
+```
+sudo a2enmod headers
+```
 # Configurar apache
 ```
 sudo nano /etc/apache2/apache2.conf
