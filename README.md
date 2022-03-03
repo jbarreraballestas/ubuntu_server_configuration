@@ -51,8 +51,10 @@ sudo usermod -a -G www-data $USER
 ```
 
 # Permisos de carpeta apache 
+
+> (Se recomienda que solo el usuario tenga acceso de edición a los ficheros de configuración)
 ```
-sudo chown -R $USER /var/www/html/ (Se recomienda que solo el usuario tenga acceso de edición a los ficheros de configuración)
+sudo chown -R $USER /var/www/html/
 ```
 
 # Configurar apache
