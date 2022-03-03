@@ -169,9 +169,8 @@ sudo chown -R $USER:www-data storage/ && sudo chown -R $USER:www-data bootstrap/
 ```
 
 # Laravel Validación Español
-```
-https://github.com/Laraveles/spanish
-```
+[Laraveles](https://github.com/Laraveles/spanish)
+
 
 # Host Virtuales Apache
 ```
