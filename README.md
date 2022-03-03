@@ -126,7 +126,7 @@ curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash - && sudo apt in
 ```sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] http://sfo1.mirrors.digitalocean.com/mariadb/repo/10.6/ubuntu bionic main'```
 
 # Instalar mariabd
-```sudo apt update && sudo apt install mariadb-server -y && sudo mysql_secure_installation```
+``` sudo apt update && sudo apt install mariadb-server -y && sudo mysql_secure_installation ```
 
 # Comandos Mysql
 ```sudo mysql```
