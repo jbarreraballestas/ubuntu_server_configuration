@@ -12,36 +12,40 @@
 # Comandos para configurar e instalar software en ubuntu server
 
 # Apache
-> sudo apt install ca-certificates apt-transport-https software-properties-common</p>
-> sudo add-apt-repository ppa:ondrej/php</p>
-> sudo add-apt-repository ppa:ondrej/apache2</p>
+> sudo apt install ca-certificates apt-transport-https software-properties-common
+> 
+> sudo add-apt-repository ppa:ondrej/php
+> 
+> sudo add-apt-repository ppa:ondrej/apache2
+> 
 > sudo apt install -y libapache2-mod-fcgid libapache2-mod-php php-common php-bz2 php-curl php-xml php-xmlrpc php-gd php-mysql php-zip php-mbstring php-bcmath php-tokenizer php-sqlite3 unzip php-intl php-xmlrpc php-soap php-xml php-fpm php-imagick php-cli php-json php-uploadprogress apache2
->sudo phpenmod mbstring
+> 
+> sudo phpenmod mbstring
 
 # Habilitar PHP-FPM
-<p>sudo a2enmod proxy_fcgi setenvif && sudo a2enconf php-fpm</p>
+> sudo a2enmod proxy_fcgi setenvif && sudo a2enconf php-fpm
 
 # Cambiar version de php cli
-<p>sudo update-alternatives --config php</p>
+> sudo update-alternatives --config php
 
 # 
 
 # Agregar el usuario actual al grupo www-data
-<p>sudo usermod -a -G www-data $USER</p>
+> sudo usermod -a -G www-data $USER
 
 # Permisos de carpeta apache 
-<p>sudo chown -R $USER /var/www/html/ (Se recomienda que solo el usuario tenga acceso de edición a los ficheros de configuración)</p>
+> sudo chown -R $USER /var/www/html/ (Se recomienda que solo el usuario tenga acceso de edición a los ficheros de configuración)
 
 # Configurar apache
-<p>sudo nano /etc/apache2/apache2.conf</p>
+> sudo nano /etc/apache2/apache2.conf
 
-<p># Caché para tipos de archivo<p>
+**Caché para tipos de archivo**
 
-<FilesMatch ".(js|css|jpg|jpeg|png|gif|ico|swf|mp4|webm|svg)$">
-                Header set Cache-Control "max-age=31536000, public"
-                Header unset Last-Modified
-                Header unset ETag
-</FilesMatch>
+> <FilesMatch ".(js|css|jpg|jpeg|png|gif|ico|swf|mp4|webm|svg)$">
+>                Header set Cache-Control "max-age=31536000, public"
+>                Header unset Last-Modified
+>                Header unset ETag
+> </FilesMatch>
   
 <p># Sobreescribir rutas url (pretty urls)</p>
 <p><Directory /var/www/></p>
