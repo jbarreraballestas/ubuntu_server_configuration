@@ -7,16 +7,16 @@
 > sudo dpkg-reconfigure locales
 
 # Certbot
-<p>sudo snap install core; sudo snap refresh core; sudo snap install --classic certbot; sudo ln -s /snap/bin/certbot /usr/bin/certbot</p>
+> sudo snap install core; sudo snap refresh core; sudo snap install --classic certbot; sudo ln -s /snap/bin/certbot /usr/bin/certbot
 
 # Comandos para configurar e instalar software en ubuntu server
 
 # Apache
-<p>sudo apt install ca-certificates apt-transport-https software-properties-common</p>
-<p>sudo add-apt-repository ppa:ondrej/php</p>
-<p>sudo add-apt-repository ppa:ondrej/apache2</p>
-<p>sudo apt install -y libapache2-mod-fcgid libapache2-mod-php php-common php-bz2 php-curl php-xml php-xmlrpc php-gd php-mysql php-zip php-mbstring php-bcmath php-tokenizer php-sqlite3 unzip php-intl php-xmlrpc php-soap php-xml php-fpm php-imagick php-cli php-json php-uploadprogress apache2 </p>
-<p>sudo phpenmod mbstring</p>
+> sudo apt install ca-certificates apt-transport-https software-properties-common</p>
+> sudo add-apt-repository ppa:ondrej/php</p>
+> sudo add-apt-repository ppa:ondrej/apache2</p>
+> sudo apt install -y libapache2-mod-fcgid libapache2-mod-php php-common php-bz2 php-curl php-xml php-xmlrpc php-gd php-mysql php-zip php-mbstring php-bcmath php-tokenizer php-sqlite3 unzip php-intl php-xmlrpc php-soap php-xml php-fpm php-imagick php-cli php-json php-uploadprogress apache2
+>sudo phpenmod mbstring
 
 # Habilitar PHP-FPM
 <p>sudo a2enmod proxy_fcgi setenvif && sudo a2enconf php-fpm</p>
