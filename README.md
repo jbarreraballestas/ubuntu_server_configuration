@@ -97,30 +97,39 @@ sudo apt install -y default-jdk
 ```
 
 # Composer
-``
+```
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && php composer-setup.php && php -r "unlink('composer-setup.php');" && sudo mv composer.phar /usr/local/bin/composer
-``
-<p>export PATH="$HOME/.config/composer/vendor/bin:$PATH"</p>
+```
+
+```
+export PATH="$HOME/.config/composer/vendor/bin:$PATH"
+```
 
 # Laravel
-<p>composer global require laravel/installer</p>
+```
+composer global require laravel/installer
+```
 
 # Node 16.x
-<p>curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash - && sudo apt install -y nodejs</p>
+```
+curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash - && sudo apt install -y nodejs
+```
 
 
 # Mariadb 10.x repository
-sudo apt install software-properties-common -y && sudo apt-key adv --fetch-keys 'https://mariadb.org/mariadb_release_signing_key.asc'
+```sudo apt install software-properties-common -y && sudo apt-key adv --fetch-keys 'https://mariadb.org/mariadb_release_signing_key.asc'```
 
-# Para ubuntu 20.04
-sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] http://sfo1.mirrors.digitalocean.com/mariadb/repo/10.6/ubuntu focal main'
+**Para ubuntu 20.04**
+```sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] http://sfo1.mirrors.digitalocean.com/mariadb/repo/10.6/ubuntu focal main'```
 
-# Para ubuntu 18.04
-<p>sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] http://sfo1.mirrors.digitalocean.com/mariadb/repo/10.6/ubuntu bionic main'</p>
-<p>sudo apt update && sudo apt install mariadb-server -y && sudo mysql_secure_installation</p>
+**Para ubuntu 18.04**
+```sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] http://sfo1.mirrors.digitalocean.com/mariadb/repo/10.6/ubuntu bionic main'```
+
+# Instalar mariabd
+```sudo apt update && sudo apt install mariadb-server -y && sudo mysql_secure_installation```
 
 # Comandos Mysql
-<p>sudo mysql</p>
+```sudo mysql```
 <p>CREATE DATABASE database_name;</p>
 <p>CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';</p>
 <p>GRANT ALL ON database_name.* TO 'user'@'localhost';</p>
