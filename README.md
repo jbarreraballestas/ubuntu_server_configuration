@@ -69,7 +69,7 @@ sudo nano /etc/apache2/apache2.conf
 </FilesMatch>
 ```
 
-# Sobreescribir rutas url (pretty urls)
+**Sobreescribir rutas url (pretty urls)**
 ```
 <Directory /var/www/>
         AllowOverride All
