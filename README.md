@@ -1,10 +1,10 @@
 # Zona Horaria
-<p>sudo timedatectl set-timezone America/Bogota</p>
+> sudo timedatectl set-timezone America/Bogota
 
 # Idioma Español
 
-<p>sudo apt install language-pack-es</p>
-<p>sudo dpkg-reconfigure locales</p>
+> sudo apt install language-pack-es
+> sudo dpkg-reconfigure locales
 
 # Certbot
 <p>sudo snap install core; sudo snap refresh core; sudo snap install --classic certbot; sudo ln -s /snap/bin/certbot /usr/bin/certbot</p>
