@@ -32,7 +32,7 @@ php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && php
 
 export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 
-composer global require laravel/installer
+#composer global require laravel/installer
 
 curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash - && sudo apt install -y nodejs
 
