@@ -8,7 +8,7 @@ sudo apt upgrade -y
 
 sudo snap install core; sudo snap refresh core; sudo snap install --classic certbot; sudo ln -s /snap/bin/certbot /usr/bin/certbot
 
-sudo apt install ca-certificates apt-transport-https software-properties-common -y
+sudo apt install ca-certificates apt-transport-https software-properties-common lsb-release -y
 
 sudo add-apt-repository ppa:ondrej/php -y
 
@@ -36,7 +36,7 @@ php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && php
 
 curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash - && sudo apt install -y nodejs
 
-sudo apt install software-properties-common -y && sudo apt-key adv --fetch-keys 'https://mariadb.org/mariadb_release_signing_key.asc'
+sudo apt-key adv --fetch-keys 'https://mariadb.org/mariadb_release_signing_key.asc'
 
 sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] http://sfo1.mirrors.digitalocean.com/mariadb/repo/10.8/ubuntu '$(lsb_release -cs)' main'
 
