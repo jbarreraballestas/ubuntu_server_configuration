@@ -20,7 +20,7 @@ sudo snap install core; sudo snap refresh core; sudo snap install --classic cert
 
 **Apache**
 ```
-sudo apt install ca-certificates apt-transport-https software-properties-common
+sudo apt install ca-certificates apt-transport-https software-properties-common lsb-release -y
 ```
 ```
 sudo add-apt-repository ppa:ondrej/php -y
