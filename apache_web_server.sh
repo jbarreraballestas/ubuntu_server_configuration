@@ -28,7 +28,7 @@ sudo a2enmod rewrite
 
 sudo systemctl restart apache2
 
-#php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && php composer-setup.php && php -r "unlink('composer-setup.php');" && sudo mv composer.phar /usr/local/bin/composer
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && php composer-setup.php && php -r "unlink('composer-setup.php');" && sudo mv composer.phar /usr/local/bin/composer
 
 #export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 
