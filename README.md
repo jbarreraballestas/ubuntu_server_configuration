@@ -132,12 +132,12 @@ sudo apt install software-properties-common -y && sudo apt-key adv --fetch-keys 
 
 **Para ubuntu 20.04**
 ```
-sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] http://sfo1.mirrors.digitalocean.com/mariadb/repo/10.6/ubuntu focal main'
+sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] http://sfo1.mirrors.digitalocean.com/mariadb/repo/10.8/ubuntu focal main'
 ```
 
 **Para ubuntu 18.04**
 ```
-sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] http://sfo1.mirrors.digitalocean.com/mariadb/repo/10.6/ubuntu bionic main'
+sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] http://sfo1.mirrors.digitalocean.com/mariadb/repo/10.8/ubuntu bionic main'
 ```
 
 # Instalar mariabd
@@ -161,7 +161,7 @@ GRANT ALL ON database_name.* TO 'user'@'localhost';
 
 # Phpmyadmin repository (No recomendado en producción pero tiene los últimos cambios)
 ```
-sudo add-apt-repository ppa:phpmyadmin/ppa 
+sudo add-apt-repository ppa:phpmyadmin/ppa -y
 ```
 # Instalar phpmyadmin
 ```
