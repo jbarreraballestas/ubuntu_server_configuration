@@ -8,7 +8,7 @@ sudo apt upgrade -y
 
 sudo snap install core; sudo snap refresh core; sudo snap install --classic certbot; sudo ln -s /snap/bin/certbot /usr/bin/certbot
 
-sudo apt install ca-certificates apt-transport-https software-properties-common
+sudo apt install ca-certificates apt-transport-https software-properties-common -y
 
 sudo add-apt-repository ppa:ondrej/php -y
 
