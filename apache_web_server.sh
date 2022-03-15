@@ -42,7 +42,7 @@ sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] http://sfo1.mirrors.digi
 
 sudo apt update && sudo apt install mariadb-server -y && sudo mysql_secure_installation
 
-sudo apt autoremove
+sudo apt autoremove -y
 
 
 
