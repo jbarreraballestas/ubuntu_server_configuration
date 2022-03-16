@@ -186,7 +186,7 @@ composer require laravel-lang/lang --dev
 ```
 
 ```
-cp vendor/laravel-lang/lang/locales/es/ resources/lang/
+cp -r vendor/laravel-lang/lang/locales/es/ resources/lang/
 ```
 
 ```
