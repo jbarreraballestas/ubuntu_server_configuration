@@ -181,7 +181,17 @@ sudo chown -R www-data:$USER storage/ && sudo chown -R www-data:$USER bootstrap/
 # Laravel Validación Español
 
 [Laravel-Lang](https://laravel-lang.com/installation/)
+```
+composer require laravel-lang/lang --dev
+```
 
+```
+cp vendor/laravel-lang/lang/locales/es/ resources/lang/
+```
+
+```
+cp resources/lang/es.json resources/lang/
+```
 
 
 # Host Virtuales Apache
