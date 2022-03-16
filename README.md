@@ -190,7 +190,7 @@ cp -r vendor/laravel-lang/lang/locales/es/ resources/lang/
 ```
 
 ```
-cp resources/lang/es.json resources/lang/
+cp resources/lang/es/es.json resources/lang/
 ```
 
 
