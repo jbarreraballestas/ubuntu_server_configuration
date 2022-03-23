@@ -10,13 +10,13 @@ sudo snap install core; sudo snap refresh core; sudo snap install --classic cert
 
 sudo apt install ca-certificates apt-transport-https software-properties-common lsb-release -y
 
-sudo add-apt-repository ppa:ondrej/php -y
+# sudo add-apt-repository ppa:ondrej/php -y
 
-sudo add-apt-repository ppa:ondrej/apache2 -y
+# sudo add-apt-repository ppa:ondrej/apache2 -y
 
-sudo apt install -y libapache2-mod-fcgid libapache2-mod-php php-common php-bz2 php-curl php-xml php-xmlrpc php-gd php-mysql php-zip php-mbstring php-bcmath php-tokenizer php-sqlite3 unzip php-intl php-xmlrpc php-soap php-xml php-fpm php-imagick php-cli php-json php-uploadprogress apache2
+sudo apt install -y libapache2-mod-fcgid libapache2-mod-php7.4 php7.4-common php7.4-bz2 php7.4-curl php7.4-xml php7.4-xmlrpc php7.4-gd php7.4-mysql php7.4-zip php7.4-mbstring php7.4-bcmath php7.4-tokenizer php7.4-sqlite3 unzip php7.4-intl php7.4-xmlrpc php7.4-soap php7.4-xml php7.4-fpm php7.4-imagick php7.4-cli php7.4-json php7.4-uploadprogress apache2
 
-sudo a2enmod proxy_fcgi setenvif && sudo a2enconf php8.1-fpm
+sudo a2enmod proxy_fcgi setenvif && sudo a2enconf php7.4-fpm
 
 sudo usermod -a -G www-data $USER
 
