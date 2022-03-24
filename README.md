@@ -1,4 +1,4 @@
-# Zona Horaria
+# Zona Horaria Colombia
 ```
 sudo timedatectl set-timezone America/Bogota
 ```
