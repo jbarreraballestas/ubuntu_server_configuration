@@ -114,11 +114,6 @@ php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && php
 export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 ```
 
-# Laravel
-```
-composer global require laravel/installer
-```
-
 # Node 16.x
 ```
 curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash - && sudo apt install -y nodejs
@@ -165,33 +160,6 @@ sudo apt install phpmyadmin -y
 
 **Como instalar y configurar phpmyadmin manualmente** [Foradot mysql y phpmyadmin](https://foratdot.info/como-instalar-mariadb-server-y-phpmyadmin).
 
-
-
-# Laravel Permisos de directorio
-```
-sudo chown -R $USER:www-data storage/ && sudo chown -R $USER:www-data bootstrap/cache/ && sudo chmod -R 775 storage/ && sudo chmod -R 775 bootstrap/cache/
-```
-
-
-```
-sudo chown -R www-data:$USER storage/ && sudo chown -R www-data:$USER bootstrap/cache/ && sudo chmod -R 775 storage/ && sudo chmod -R 775 bootstrap/cache/
-```
-
-
-# Laravel Validación Español
-
-[Laravel-Lang](https://laravel-lang.com/installation/)
-```
-composer require laravel-lang/lang --dev
-```
-
-```
-cp -r vendor/laravel-lang/lang/locales/es/ resources/lang/
-```
-
-```
-cp resources/lang/es/es.json resources/lang/
-```
 
 
 # Host Virtuales Apache
