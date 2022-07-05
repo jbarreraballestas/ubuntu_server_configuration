@@ -37,6 +37,9 @@ sudo phpenmod mbstring
 
 
 **NGINX**
+```
+sudo apt install nginx
+```
 
 
 # Habilitar PHP-FPM
