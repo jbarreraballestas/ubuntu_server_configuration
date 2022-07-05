@@ -16,9 +16,8 @@ sudo dpkg-reconfigure locales
 sudo snap install core; sudo snap refresh core; sudo snap install --classic certbot; sudo ln -s /snap/bin/certbot /usr/bin/certbot
 ```
 
-# Comandos para configurar e instalar software en ubuntu server
+# Comandos para configurar e instalar apache y php
 
-**Apache**
 ```
 sudo apt install ca-certificates apt-transport-https software-properties-common lsb-release -y
 ```
@@ -36,10 +35,6 @@ sudo phpenmod mbstring
 ```
 
 
-**NGINX**
-```
-sudo apt install nginx
-```
 
 
 # Habilitar PHP-FPM
