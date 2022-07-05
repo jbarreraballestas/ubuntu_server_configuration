@@ -35,6 +35,10 @@ sudo apt install -y libapache2-mod-fcgid libapache2-mod-php php-common php-bz2 p
 sudo phpenmod mbstring
 ```
 
+
+**NGINX**
+
+
 # Habilitar PHP-FPM
 ```
 sudo a2enmod proxy_fcgi setenvif && sudo a2enconf php-fpm
