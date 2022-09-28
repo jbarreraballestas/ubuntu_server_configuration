@@ -10,7 +10,9 @@ sudo apt install language-pack-es && sudo apt install locales-all && sudo locale
 ```
 sudo dpkg-reconfigure locales
 ```
-
+```
+sudo update-locale 
+```
 # Certbot
 ```
 sudo snap install core; sudo snap refresh core; sudo snap install --classic certbot; sudo ln -s /snap/bin/certbot /usr/bin/certbot
