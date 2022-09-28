@@ -5,7 +5,7 @@ sudo timedatectl set-timezone America/Bogota
 
 # Idioma Español
 ```
-sudo apt install language-pack-es && sudo apt install locales-all && sudo locale-gen
+sudo apt install language-pack-es locales-all && sudo locale-gen
 ```
 ```
 sudo dpkg-reconfigure locales
