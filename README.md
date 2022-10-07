@@ -18,26 +18,10 @@ sudo update-locale
 sudo snap install core; sudo snap refresh core; sudo snap install --classic certbot; sudo ln -s /snap/bin/certbot /usr/bin/certbot
 ```
 
-# Comandos para configurar e instalar apache y php
-
+# Instalar php
 ```
-sudo apt install ca-certificates apt-transport-https software-properties-common lsb-release -y
+sudo apt install -y php php-fpm php-curl php-zip php-xml php-mbstring php-mysql
 ```
-```
-sudo add-apt-repository ppa:ondrej/php -y
-```
-```
-sudo add-apt-repository ppa:ondrej/apache2 -y
-```
-```
-sudo apt install -y libapache2-mod-fcgid libapache2-mod-php php-common php-bz2 php-curl php-xml php-xmlrpc php-gd php-mysql php-zip php-mbstring php-bcmath php-tokenizer php-sqlite3 unzip php-intl php-xmlrpc php-soap php-xml php-fpm php-imagick php-cli php-json php-uploadprogress apache2
-```
-```
-sudo phpenmod mbstring
-```
-
-
-
 
 # Habilitar PHP-FPM
 ```
@@ -53,7 +37,14 @@ sudo update-alternatives --config php
 ```
 sudo usermod -a -G www-data $USER
 ```
-
+# Instalar nginx
+```
+sudo apt install nginx -y
+```
+# Instalar apache
+```
+sudo apt install apache2 -y
+```
 # Permisos de carpeta apache 
 
 > (Se recomienda que solo el usuario tenga acceso de edición a los ficheros de configuración)
