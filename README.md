@@ -23,7 +23,7 @@ sudo snap install core; sudo snap refresh core; sudo snap install --classic cert
 sudo apt install -y php php-fpm php-curl php-zip php-xml php-mbstring php-mysql
 ```
 
-# Habilitar PHP-FPM
+# Habilitar PHP-FPM Apache
 ```
 sudo a2enmod proxy_fcgi setenvif && sudo a2enconf php-fpm
 ```
