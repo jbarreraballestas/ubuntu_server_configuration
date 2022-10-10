@@ -122,7 +122,7 @@ sudo apt install software-properties-common -y && sudo apt-key adv --fetch-keys 
 
 # Mariadb 10.x add repository
 ```
-sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] http://sfo1.mirrors.digitalocean.com/mariadb/repo/10.8/ubuntu '$(lsb_release -cs)' main'
+sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] http://sfo1.mirrors.digitalocean.com/mariadb/repo/10.9/ubuntu '$(lsb_release -cs)' main'
 ```
 
 # Instalar mariabd
