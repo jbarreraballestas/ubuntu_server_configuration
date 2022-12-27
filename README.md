@@ -20,7 +20,7 @@ sudo snap install core; sudo snap refresh core; sudo snap install --classic cert
 
 # Instalar php
 ```
-sudo apt install -y php php-common php-cli php-fpm php-curl php-zip php-xml php-mbstring php-mysql
+sudo apt install -y php php-common php-cli php-fpm php-curl php-zip php-xml php-mbstring php-mysql php-gd
 ```
 
 # Habilitar PHP-FPM Apache
