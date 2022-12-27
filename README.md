@@ -18,6 +18,12 @@ sudo update-locale
 sudo snap install core; sudo snap refresh core; sudo snap install --classic certbot; sudo ln -s /snap/bin/certbot /usr/bin/certbot
 ```
 
+# PPA for apache and php (Optional)
+```
+sudo add-apt-repository ppa:ondrej/apache2
+sudo add-apt-repository ppa:ondrej/php
+```
+
 # Instalar php
 ```
 sudo apt install -y php php-common php-cli php-fpm php-curl php-zip php-xml php-mbstring php-mysql php-gd
