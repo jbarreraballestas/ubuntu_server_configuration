@@ -24,9 +24,9 @@ sudo add-apt-repository ppa:ondrej/apache2
 sudo add-apt-repository ppa:ondrej/php
 ```
 
-# Instalar unzip
+# Instalar zip and unzip
 ```
-sudo apt install -y unzip
+sudo apt install -y zip unzip
 ```
 
 # Instalar php
