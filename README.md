@@ -24,9 +24,14 @@ sudo add-apt-repository ppa:ondrej/apache2
 sudo add-apt-repository ppa:ondrej/php
 ```
 
+# Instalar unzip
+```
+sudo apt install -y unzip
+```
+
 # Instalar php
 ```
-sudo apt install -y php php-common php-cli php-fpm php-curl php-zip php-xml php-mbstring php-mysql php-gd
+sudo apt install -y php php-common php-cli php-fpm php-curl php-zip php-xml php-mbstring php-mysql php-gd php-zip
 ```
 
 # Habilitar PHP-FPM Apache
