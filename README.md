@@ -18,7 +18,7 @@ sudo update-locale
 sudo snap install core; sudo snap refresh core; sudo snap install --classic certbot; sudo ln -s /snap/bin/certbot /usr/bin/certbot
 ```
 
-# Certbot Subdomains
+# Certbot wildcard certificate
 ```
 sudo certbot certonly --manual --preferred-challenges=dns --email admin@example.com --server https://acme-v02.api.letsencrypt.org/directory --agree-tos -d *.example.com -d example.com
 ```
