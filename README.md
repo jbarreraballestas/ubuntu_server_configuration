@@ -36,7 +36,7 @@ sudo apt install -y zip unzip
 
 # Instalar php
 ```
-sudo apt install -y php php-common php-cli php-fpm php-curl php-zip php-xml php-mbstring php-mysql php-gd php-zip
+sudo apt install -y php php-common php-cli php-fpm php-curl php-zip php-xml php-mbstring php-bcmath php-mysql php-gd php-zip
 ```
 
 # Habilitar PHP-FPM Apache
