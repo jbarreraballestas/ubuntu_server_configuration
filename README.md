@@ -136,9 +136,9 @@ curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - && sudo apt in
 sudo apt install software-properties-common -y && sudo apt-key adv --fetch-keys 'https://mariadb.org/mariadb_release_signing_key.asc'
 ```
 
-# Mariadb 10.x add repository
+# Mariadb 10.11 add repository
 ```
-sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] http://sfo1.mirrors.digitalocean.com/mariadb/repo/10.10/ubuntu '$(lsb_release -cs)' main'
+sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] http://sfo1.mirrors.digitalocean.com/mariadb/repo/10.11/ubuntu '$(lsb_release -cs)' main'
 ```
 
 # Instalar mariabd
