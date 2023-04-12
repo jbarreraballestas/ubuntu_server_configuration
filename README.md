@@ -110,6 +110,10 @@ sudo a2enmod rewrite
 sudo systemctl restart apache2
 ```
 
+# Habilitar modulo ssl
+```
+sudo a2enmod ssl
+```
 
 # Jdk - Kit de Desarrollo Java
 ```
