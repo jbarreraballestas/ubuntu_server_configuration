@@ -2,6 +2,10 @@
 ```
 sudo timedatectl set-timezone America/Bogota
 ```
+# Instalar zip and unzip
+```
+sudo apt install -y zip unzip
+```
 
 # Idioma Español
 ```
@@ -23,15 +27,14 @@ sudo snap install core; sudo snap refresh core; sudo snap install --classic cert
 sudo certbot certonly --manual --preferred-challenges=dns --email admin@example.com --server https://acme-v02.api.letsencrypt.org/directory --agree-tos -d *.example.com -d example.com
 ```
 
-# PPA for apache and php (Optional)
+# PPA for apache (Optional)
 ```
 sudo add-apt-repository ppa:ondrej/apache2
-sudo add-apt-repository ppa:ondrej/php
 ```
 
-# Instalar zip and unzip
+# PPA for php (Optional)
 ```
-sudo apt install -y zip unzip
+sudo add-apt-repository ppa:ondrej/php
 ```
 
 # Instalar php
@@ -74,6 +77,33 @@ sudo chown -R $USER /var/www/html/
 ```
 sudo a2enmod headers
 ```
+# Probar Configuración Apache
+```
+apachectl configtest
+```
+
+# Habilitar modulo rewrite
+```
+sudo a2enmod rewrite
+```
+# reiniciar servicio apache
+```
+sudo systemctl restart apache2
+```
+
+# Habilitar modulo ssl
+```
+sudo a2enmod ssl
+```
+# Recargar configuración de apache
+```
+sudo systemctl reload apache2
+```
+
+# Host Virtuales Apache
+```
+sudo nano /etc/apache2/sites-available/000-default.conf
+```
 
 **Editar archivo de configuración**
 ```
@@ -94,25 +124,6 @@ sudo nano /etc/apache2/apache2.conf
 <Directory /var/www/>
         AllowOverride All
 </Directory>
-```
-
-
-# Probar Configuración Apache
-```
-apachectl configtest
-```
-
-# Habilitar modulo rewrite
-```
-sudo a2enmod rewrite
-```
-```
-sudo systemctl restart apache2
-```
-
-# Habilitar modulo ssl
-```
-sudo a2enmod ssl
 ```
 
 # Jdk - Kit de Desarrollo Java
@@ -175,12 +186,3 @@ sudo apt install phpmyadmin -y
 
 **Como instalar y configurar phpmyadmin manualmente** [Foradot mysql y phpmyadmin](https://foratdot.info/como-instalar-mariadb-server-y-phpmyadmin).
 
-
-
-# Host Virtuales Apache
-```
-sudo nano /etc/apache2/sites-available/000-default.conf
-```
-```
-sudo systemctl reload apache2
-```
