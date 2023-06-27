@@ -126,6 +126,13 @@ sudo nano /etc/apache2/apache2.conf
 </Directory>
 ```
 
+**Usar versión específica de php fpm**
+```
+<FilesMatch "\.php$">
+    SetHandler "proxy:unix:/run/php/php8.1-fpm.sock|fcgi://localhost/"
+</FilesMatch>
+```
+
 # Jdk - Kit de Desarrollo Java
 ```
 sudo apt install -y default-jdk
