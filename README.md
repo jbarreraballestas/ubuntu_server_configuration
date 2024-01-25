@@ -147,9 +147,9 @@ php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && php
 export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 ```
 
-# Node 18.x
+# Nodejs
 ```
-curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - && sudo apt install -y nodejs
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash - && sudo apt install -y nodejs
 ```
 
 
