@@ -153,7 +153,7 @@ curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash - && sudo apt in
 ```
 
 
-# Mariadb 10.x repository key
+# Mariadb repository key
 ```
 sudo apt install software-properties-common -y && sudo apt-key adv --fetch-keys 'https://mariadb.org/mariadb_release_signing_key.asc'
 ```
@@ -165,7 +165,7 @@ sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] http://sfo1.mirrors.digi
 
 # Instalar mariabd
 ```
-sudo apt update && sudo apt install mariadb-server -y && sudo mysql_secure_installation
+sudo apt update && sudo apt install mariadb-server -y && sudo mariadb-secure-installation
 ```
 
 # Comandos Mysql
