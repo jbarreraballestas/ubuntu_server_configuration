@@ -27,6 +27,11 @@ sudo snap install core; sudo snap refresh core; sudo snap install --classic cert
 sudo certbot certonly --manual --preferred-challenges=dns --email admin@example.com --server https://acme-v02.api.letsencrypt.org/directory --agree-tos -d *.example.com -d example.com
 ```
 
+# Certbot wilcard certificate certbot-dns-porkbun plugin
+```
+certbot certonly --non-interactive --agree-tos --email <your-email-address> --preferred-challenges dns --authenticator dns-porkbun --dns-porkbun-credentials </path/to/your/porkbun.ini> --dns-porkbun-propagation-seconds 60 -d "*.example.com" -d "example.com"
+```
+
 # PPA for apache (Optional)
 ```
 sudo add-apt-repository ppa:ondrej/apache2
