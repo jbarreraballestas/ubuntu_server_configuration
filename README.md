@@ -154,7 +154,7 @@ export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 
 # Nodejs
 ```
-curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash - && sudo apt install -y nodejs
+curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash - && sudo apt install -y nodejs
 ```
 
 
